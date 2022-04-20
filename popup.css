@@ -1,0 +1,93 @@
+.-opened {
+    display: block;
+}
+
+.-closed {
+    display: none !important;
+}
+
+.listline_popup {
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.863);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.popup_close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.listline_popup_header::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(197, 197, 197);
+    margin: 30px 0;
+}
+
+.listline_popup_header {
+    font-size: x-large;
+}
+
+.listline_popup {
+    display: flex;
+    justify-content: space-around;
+}
+
+.listline_popup_login {
+    margin-top: 200px;
+    margin-left: 150px;
+    margin-right: 20px;
+}
+
+.listline_popup_registration {
+    margin-top: 200px;
+    margin-right: 150px;
+    margin-left: 20px;
+}
+
+.input {
+    border: 1px solid rgb(197, 197, 197);
+    width: 300px;
+    height: 35px;
+}
+
+.popup_item {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.popup_label {
+    margin-right: 15px;
+}
+
+.checkbox {
+    border: 1px solid rgb(197, 197, 197);
+}
+
+.popup_forget_password {
+    margin-left: 145px;
+}
+
+.popup {
+    margin-left: 145px;
+    margin-top: 20px;
+    height: 40px;
+    border: none;
+    background-color: brown;
+    color: white;
+    font: 1em sans-serif;
+    font-size: smaller;
+}
+
+.popup_checbox {
+    margin-left: 145px;
+}

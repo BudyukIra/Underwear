@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="header-info_search.css" />
+    <link rel="stylesheet" href="header-catalog.css" />
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <title>Магазин белья</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header-info">
+                <div class="header-info_toolbar">
+                    <div class="header-info_number">
+                        <a href="tel:89621708801">8 962 170 88 01</a>
+                    </div>
+                    <div class="header-info_lang">
+                        <button class="lang-current">RU</button>
+                        <div class="lang-choice">
+                            <a href="https://en.incanto.eu/">EN</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-info_logo">
+                    <img src="лого.png" title="Магазин белья" />
+                </div>
+                <div class="header-info_listline">
+                    <div class="listline_store">
+                        <a href="https://incanto.eu/company/shops/"><img src="listline/адреса.png" width="20" /></a>
+                    </div>
+                    <div class="listline_search" id="toggle-search">
+                        <div class="listline_search_form">
+                            <button class="search_button">
+                  <img src="listline/поиск.png" width="20" />
+                </button>
+                        </div>
+                    </div>
+                    <div class="listline_user" id="user-icon">
+                        <a href="javascript:void(0)"><img src="listline/юзер.png" width="20" /></a>
+                    </div>
+                    <div class="listline_favorit">
+                        <a href="https://incanto.eu/personal/favorite/"><img src="listline/лайк.png" width="20" /></a>
+                    </div>
+                    <div class="listline_basket">
+                        <a href="https://incanto.eu/basket/"><img src="listline/корзина.png" width="20" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-search" id="search-block">
+                <form class="header-search_form" action="" method="get">
+                    <input class="header-search_input" name="s" placeholder="Поиск" type="search" />
+                    <button class="header-search_button" type="submit">НАЙТИ</button>
+                </form>
+            </div>
+            <div class="header-catalog">
+                <div class="catalog_categories">
+                    <button class="category">
+              <a href="https://incanto.eu/catalog/novinki/">НОВИНКИ</a>
+            </button>
+                    <div class="category-choice">
+                        <div class="choise">
+                            <a href="https://incanto.eu/catalog/novinki/bra_2/">Бюстгалтеры</a
+                >
+                <a href="https://incanto.eu/catalog/novinki/trusy_2/">Трусы</a>
+                            <a href="https://incanto.eu/catalog/novinki/bele_2/">Белье</a>
+                            <a href="https://incanto.eu/catalog/novinki/odezhda_2/">Одежда</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="catalog_categories">
+            <button class="category">
+              <a href="https://incanto.eu/catalog/byustgaltery_i_trusy/"
+                >БЮСТГАЛТЕРЫ И ТРУСЫ</a
+              >
+            </button>
+            <div class="category-choice">
+              <div class="choise">
+                <a
+                  class="caption new"
+                  href="https://incanto.eu/catalog/novinki/"
+                  >НОВИНКИ</a
+                >
+                <a
+                  href="https://incanto.eu/catalog/byustgaltery_i_trusy/vse_byustgaltery/"
+                  >Все бюстгалтеры</a
+                >
+                <a
+                  href="https://incanto.eu/catalog/byustgaltery_i_trusy/vse_trusy/"
+                  >Все трусы</a
+                >
+              </div>
+              <div class="choise">
+                <a class="caption action" href="https://incanto.eu/actions/"
+                  >АКЦИИ</a
+                >
+                <a
+                  href="https://incanto.eu/actions/vtoroy-byustgalter-so-skidkoy-50/"
+                  >Второй бюстгалтер со скидкой 50%</a
+                >
+                <a
+                  href="https://incanto.eu/actions/chetvertye-trusiki-v-podarok/"
+                  >Четвертые трусики в подарок</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </header>
+  <div class="listline_popup -closed" id="user-popup">
+      <div class="listline_popup_login">
+        <div class="listline_popup_header">ВХОД</div>
+        <div class="popup_item">
+          <div class="popup_label">Электронная почта</div>
+          <div class="popup_input">
+            <input class="input" type="email" />
+          </div>
+        </div>
+        <div class="popup_item">
+          <div class="popup_label">Пароль</div>
+          <div class="popup_input">
+            <input class="input" type="password" />
+          </div>
+        </div>
+        <div class="popup_forget_password">Забыли пароль</div>
+        <div class="popup_item -closed">
+          <div class="popup_label">Электронная почта</div>
+          <div class="popup_input">
+            <input class="input" type="email" />
+          </div>
+        </div>
+        <div class="popup_button">
+          <button class="popup">ВОЙТИ</button>
+        </div>
+      </div>
+      <div class="listline_popup_registration">
+        <div class="listline_popup_header">ЗАРЕГИСТРИРОВАТЬСЯ</div>
+        <div class="popup_item">
+          <div class="popup_label">Ваше имя</div>
+          <div class="popup_input">
+            <input class="input" type="text" />
+          </div>
+        </div>
+        <div class="popup_item">
+          <div class="popup_label">Электронная почта</div>
+          <div class="popup_input">
+            <input class="input" type="email" placeholder="mail@example.com" />
+          </div>
+        </div>
+        <div class="popup_item">
+          <div class="popup_label">Телефон</div>
+          <div class="popup_input">
+            <input class="input" type="number" />
+          </div>
+        </div>
+        <div class="popup_item">
+          <div class="popup_label">Пароль</div>
+          <div class="popup_input">
+            <input class="input" type="password" />
+          </div>
+        </div>
+        <div class="popup_item">
+          <div class="popup_label">Пароль еще раз</div>
+          <div class="popup_input">
+            <input class="input" type="password" />
+          </div>
+        </div>
+        <div class="popup_checbox">
+          <input type="checkbox" />Я согласен с
+          <a href="https://incanto.eu/upload/152.pdf" target="_blank"
+            >правилами обработки информации</a
+          >
+        </div>
+        <div class="popup_button">
+          <button class="popup">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        </div>
+      </div>
+      <div class="popup_close" id="popup_close">
+        <img src="rhtcn.png" width="20" />
+      </div>
+  </div>
+  <div class="slider">
+      <div class="slider__items">
+        <div class="slider__item">
+          <img src="slides/слайд1.png" width="100%" />
+        </div>
+        <div class="slider__item">
+          <img src="slides/слайд2.png" width="100%" />
+        </div>
+        <div class="slider__item">
+          <img src="slides/слайд3.png" width="100%" />
+        </div>
+      </div>
+      <a class="prev" onclick="slide(event, 100)">&#10094;</a>
+                            <a class="next" onclick="slide(event, -100)">&#10095;</a>
+                        </div>
+                        <div class="body_new">
+                            <span>НОВИНКИ</span>
+                        </div>
+                        <div class="hit_slides">
+                            <div class="slide">
+                                <div class="slide_part">
+                                    <div class="new_slideshow_slide fade">
+                                        <img class="slide_img" src="newslides/ньюслайд1.png" />
+                                    </div>
+                                    <div class="text_new">Новинка</div>
+                                    <a class="text" href="https://incanto.eu/catalog/byustgaltery_i_trusy/byustgaltery_s_myagkimi_chashkami/byustgalter_s_myagkimi_chashkami_na_peremychke_lucrecia/">Бюстгалтер с мягкими чашечками</a>
+                                </div>
+                                <div class="text_cost">3999Р</div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide_part">
+                                    <div class="new_slideshow_slide fade">
+                                        <img class="slide_img emerging" src="newslides/ньюслайд2.1.png" />
+                                        <img class="slide_img hidden" src="newslides/ньюслайд2.2.png" />
+                                    </div>
+                                    <div class="text_new">Новинка</div>
+                                    <a class="text" href="https://incanto.eu/catalog/odezhda/dlya_sna_1/longsliv_s_dlinnymi_rukavami_micaela/">Лонгслив с длинными рукавами</a>
+                                </div>
+                                <div class="text_cost">2999Р</div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide_part">
+                                    <div class="new_slideshow_slide fade">
+                                        <img class="slide_img" src="newslides/ньюслайд3.png" />
+                                    </div>
+                                    <div class="text_new">Новинка</div>
+                                    <a class="text" href="https://incanto.eu/catalog/byustgaltery_i_trusy/vse_trusy/nabor_iz_3_kh_braziliano_sredney_posadki_felinda/">Набор из 3-х бразилиано средней посадки</a>
+                                </div>
+                                <div class="text_cost">1999Р</div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide_part">
+                                    <div class="new_slideshow_slide fade">
+                                        <img class="slide_img" src="newslides/ньюслайд4.png" />
+                                    </div>
+                                    <div class="text_new">Новинка</div>
+                                    <a class="text" href="https://incanto.eu/catalog/byustgaltery_i_trusy/vse_trusy/nabor_iz_3_kh_slipov_sredney_posadki_felinda/">Набор из 3-х слипов средней посадки</a>
+                                </div>
+                                <div class="text_cost">1999Р</div>
+                            </div>
+                        </div>
+                        <div class="body_hit">
+                            <span>ХИТЫ ПРОДАЖ</span>
+                        </div>
+                        <div class="hit_slides">
+                            <div class="hit_slide">
+                                <div class="hit_slide_part">
+                                    <div class="hit_slide_img">
+                                        <img class="slide_img" src="hitdlides/slide1.1.png" />
+                                        <img class="slide_img none" src="hitdlides/slide1.2.png" />
+                                    </div>
+                                    <div class="text_new">Бестселлер</div>
+                                    <a class="text" href="https://incanto.eu/catalog/byustgaltery_i_trusy/byustgaltery_push_up/byustgalter_push_up_s_formovannymi_chashkami_na_stane_kiki/">Бюстгальтер Push-up с формованными чашками на стане</a>
+                                </div>
+                                <div class="text_cost">3999Р</div>
+                            </div>
+                            <div class="hit_slide">
+                                <div class="hit_slide_part">
+                                    <div class="hit_slide_img">
+                                        <img class="slide_img" src="hitdlides/slide2.png" />
+                                    </div>
+                                    <div class="text_new">Бестселлер</div>
+                                    <a class="text" href="https://incanto.eu/catalog/byustgaltery_i_trusy/byustgaltery_s_myagkimi_chashkami/byustgalter_s_myagkimi_chashkami_na_stane_tammi/">Бюстгальтер с мягкими чашками на стане</a>
+                                </div>
+                                <div class="text_cost">3699Р</div>
+                            </div>
+                            <div class="hit_slide">
+                                <div class="hit_slide_part">
+                                    <div class="hit_slide_img">
+                                        <img class="slide_img" src="hitdlides/slide3.png" />
+                                    </div>
+                                    <div class="text_new">Бестселлер</div>
+                                    <a class="text" href="https://incanto.eu/catalog/byustgaltery_i_trusy/byustgaltery_s_myagkimi_chashkami/byustgalter_s_myagkimi_chashkami_i_sponzhevoy_podderzhkoy_na_stane_patricia/">Бюстгальтер с мягкими чашками и спонжевой поддержкой на стане</a>
+                                </div>
+                                <div class="text_cost">3999Р</div>
+                            </div>
+                            <div class="hit_slide">
+                                <div class="hit_slide_part">
+                                    <div class="hit_slide_img">
+                                        <img class="slide_img" src="hitdlides/slide4.png" />
+                                    </div>
+                                    <div class="text_new">Бестселлер</div>
+                                    <a class="text" href="https://incanto.eu/catalog/byustgaltery_i_trusy/braziliano_1/braziliano_eden/">Бразилиано</a>
+                                </div>
+                                <div class="text_cost">1799Р</div>
+                            </div>
+                        </div>
+                        <div class="body_inst">
+                            <span>БОЛЬШЕ НОВОСТЕЙ И ФОТО В НАШЕМ INSTAGRAM</span>
+                        </div>
+                        <div class="inst">
+                            <img class="inst_img" src="instagram.png" />
+                            <a class="inst_a" href="https://www.instagram.com/incantoofficial/">incantoofficial</a>
+                        </div>
+                        <div class="inst_photos">
+                            <a href="https://www.instagram.com/p/Ca6mBTZB3tD/"><img class="inst_photo" src="inst/inst1.png" /></a>
+                            <img class="inst_photo" src="inst/inst2.png" />
+                            <img class="inst_photo" src="inst/inst3.png" />
+                            <img class="inst_photo" src="inst/inst4.png" />
+                            <img class="inst_photo" src="inst/inst5.png" />
+                            <img class="inst_photo" src="inst/inst6.png" />
+                            <img class="inst_photo" src="inst/inst7.png" />
+                            <img class="inst_photo" src="inst/inst8.png" />
+                            <img class="inst_photo" src="inst/inst9.png" />
+                            <img class="inst_photo" src="inst/inst1.png" />
+                        </div>
+                        <div class="inst_buttons">
+                            <div class="inst_more_photos">
+                                <button class="more_photos">БОЛЬШЕ ФОТО</button>
+                            </div>
+                            <div class="inst_follow">
+                                <button class="follow"><img class="inst_img_w" src="Instagram_w.png"/>ПОДПИСАТЬСЯ</button>
+                            </div>
+                        </div>
+                        <div class="body_mailing_list">
+                            <span>ПОДПИШИТЕСЬ НА РАССЫЛКУ INCANTO И ПОЛУЧИТЕ СКИДКУ 10% НА ПЕРВЫЙ ЗАКАЗ!</span>
+                        </div>
+                        <div class="mailing_list_h">
+                            Оставьте свой e-mail, чтобы первыми узнать о новинках, акциях и распродажах.
+                        </div>
+                        <div class="mailing_list_container">
+                            <div class="mailing_list_item">
+                                <input class="input mail" type="email" placeholder="Введите ваш e-mail" />
+                                <button class="follow_but">ПОДПИСАТЬСЯ</button>
+                            </div>
+                            <div class="mailing_list_checbox">
+                                <input type="checkbox" />Я согласен с
+                                <a class="confin" href="https://incanto.eu/upload/152.pdf" target="_blank">Политикой конфидециальности</a
+        >
+        компании и хочу получать рекламную рассылку.
+      </div>
+    </div>
+    <div class="footer">
+      <div class="logo_footer">
+        <img class="logo_footer_img" src="лого.png">
+      </div>
+      <div class="choice_footer">
+        <div class="catalog_footer">
+          <h4>КАТАЛОГ</h4>
+          <a href="https://incanto.eu/catalog/kupalniki_1/">Купальники</a>
+                                <a href="https://incanto.eu/catalog/byustgaltery_i_trusy/">Бра и трусы</a>
+                                <a href="https://incanto.eu/catalog/bele/">Белье</a>
+                                <a href="https://incanto.eu/catalog/odezhda/">Одежда</a>
+                                <a href="https://incanto.eu/catalog/muzhchinam/">Мужчинам</a>
+                                <a href="https://incanto.eu/catalog/detyam/">Детям</a>
+                            </div>
+                            <div class="company_footer">
+                                <h4>О КОМПАНИИ</h4>
+                                <a href="https://incanto.eu/forbuyers/o-kompanii/">История</a>
+                                <a href="https://incanto.eu/company/shops/">Адреса магазинов</a>
+                                <a href="https://incanto.eu/forbuyers/articles/">Статьи</a>
+                                <a href="https://incanto.eu/franchising/">Франчайзинг</a>
+                                <a href="https://incanto.eu/upload/152.pdf">Политика конфиденциальности</a>
+                                <a href="https://incanto.eu/company/contacts/">Контакты</a>
+                            </div>
+                            <div class="buyers_footer">
+                                <h4>ПОКУПАТЕЛЯМ</h4>
+                                <a href="https://incanto.eu/faq/">Частые вопросы</a>
+                                <a href="https://incanto.eu/forbuyers/payment/">Доставка и оплата</a>
+                                <a href="https://incanto.eu/forbuyers/guarantee-return/">Возврат</a>
+                                <a href="https://incanto.eu/forbuyers/size-table/">Таблица размеров</a>
+                                <a href="https://incanto.eu/forbuyers/terms-of-service/">Условия обслуживания</a>
+                                <a href="https://incanto.eu/forbuyers/tracking/">Отслеживание заказа</a>
+                            </div>
+                        </div>
+                        <div class="imgs_footer">
+                            <div class="imgs_bw_footer">
+                                <img class="img_bw_footer" src="footer/facebook.png">
+                                <img class="img_bw_footer" src="footer/instagram.png">
+                                <img class="img_bw_footer" src="footer/tictok.png">
+                                <img class="img_bw_footer" src="footer/youtube.png">
+                            </div>
+                            <div class="pay_footer">
+                                <img class="visa" src="footer/Visa.png">
+                                <img class="mc" src="footer/Mastercard.png">
+                                <img class="apple" src="footer/Apple_Pay.png">
+                                <img class="mir" src="footer/mir.png">
+                            </div>
+                            <div class="delivery_footer">
+                                <img class="pony" src="footer/pony.png">
+                                <img class="pick" src="footer/pick.png">
+                            </div>
+                            <div class="copyright">
+                                <p>© 2022 интернет-магазин INCANTO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="search.js"></script>
+                    <script src="slider.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.logo_footer_img {
+    width: 260px;
+    height: 70px;
+    margin-top: 15px;
+}
+
+.choice_footer {
+    display: flex;
+    justify-content: space-between;
+    width: 612px;
+    height: 190px;
+}
+
+.catalog_footer,
+.company_footer,
+.buyers_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 15px;
+}
+
+.catalog_footer a,
+.company_footer a,
+.buyers_footer a {
+    text-decoration: none;
+}
+
+.imgs_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.imgs_bw_footer {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+}
+
+.img_bw_footer {
+    width: 20px;
+    height: 20px;
+    background-color: #F5F5F5FF;
+    margin-top: 15px;
+}
+
+.pay_footer {
+    width: 190px;
+    display: flex;
+    margin: 20px 0;
+}
+
+.visa {
+    height: 17px;
+    width: 60px;
+    margin: 0 5px;
+}
+
+.mc {
+    height: 17px;
+    width: 30px;
+    margin: 0 5px;
+}
+
+.apple {
+    height: 20px;
+    width: 50px;
+    margin: 0 5px;
+}
+
+.mir {
+    height: 10px;
+    width: 40px;
+    margin: 0 5px;
+    margin-top: 7px;
+}
+
+.delivery_footer {
+    width: 110px;
+    display: flex;
+}
+
+.pony {
+    height: 27px;
+    width: 50px;
+}
+
+.pick {
+    height: 35px;
+    width: 60px;
+}
+
+.img_bw_footer:hover {
+    background-color: black;
+    cursor: pointer;
+}
